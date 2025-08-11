@@ -37,13 +37,13 @@ const Ratings = () => {
   return (
     <div className='bg-section pb-[162px]'>
         <Container>
-            <div className='flex justify-between items-center'>
+            <div className='flex flex-wrap justify-between items-center gap-14'>
                 {
                     ratingData.map((index)=>(
                         <div className='text-center'>
                             <img src={index.img} alt=""  className='mx-auto'/>
-                            <h1 className='font-extrabold text-[39px] leading-[44px] text-primary pt-[28px] pb-[18px]'>{index.title}</h1>
-                            <p className='font-primary font-bold text-[20px] leading-[120%] text-[#464558]'>{index.text}</p>
+                            <h1 className='font-extrabold text-[36px] sm:text-[39px] leading-[44px] text-primary pt-[20px] sm:pt-[28px] pb-[18px]'>{index.title}</h1>
+                            <p className='font-primary font-bold text-[18px] sm:text-[20px] leading-[120%] text-[#464558]'>{index.text}</p>
                         </div>
                     ))
                 }
